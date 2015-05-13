@@ -61,15 +61,18 @@ __END__
 
 =head1 NAME
 
-Lingua::JA::Onbiki - It's new $module
+Lingua::JA::Onbiki - convert Onbiki into Boin
 
 =head1 SYNOPSIS
 
-    use Lingua::JA::Onbiki;
+    use Lingua::JA::Onbiki qw/onbiki2boin/;
+
+    $onbiki = 'あったか〜い';
+    $boin = onbiki2boin($onbiki); # => あったかあい
 
 =head1 DESCRIPTION
 
-Lingua::JA::Onbiki is ...
+Lingua::JA::Onbiki converts Onbiki into Boin in Japanese.
 
 =head1 LICENSE
 
@@ -80,7 +83,7 @@ it under the same terms as Perl itself.
 
 =head1 AUTHOR
 
-Satoshi Yanuma E<lt>satoshi.yanuma@google.comE<gt>
+YANUTETSU E<lt>yanutetsu@cpan.orgE<gt>
 
 =cut
 
