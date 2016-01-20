@@ -6,8 +6,8 @@ Lingua::JA::Onbiki - convert Onbiki into Boin
 
     use Lingua::JA::Onbiki qw/onbiki2boin/;
 
-    $onbiki = 'あったか〜い';
-    $boin = onbiki2boin($onbiki); # => あったかあい
+    $onbiki = 'あったか〜いんだから〜';
+    $boin = onbiki2boin($onbiki); # => あったかあいんだからあ
 
 # DESCRIPTION
 
