@@ -51,7 +51,7 @@ my %boins = qw(
 
 sub onbiki2boin {
     my $char;
-    return join q{}, map { $char = !( m/ー|〜/ && $char ) ? $_ : exists $boins{$char} ? $boins{$char} : $_; } split //, $_[0];
+    return join q{}, map { $char = m/ー|〜/ && $char && exists $boins{$char} ? $boins{$char} : $_; } split //, $_[0];
 }
 
 1;
